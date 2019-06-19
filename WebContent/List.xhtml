@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:body>
+	<h1>Liste des documents</h1>
+	<h:dataTable value="#{documentAction.list}" var="doc" width="100%" border="1" cellspacing="0">
+		<h:column>
+			<h:outputText value="#{doc.id }" />
+		</h:column>
+
+		<h:column>
+			<h:outputText value="#{doc.title }" />
+		</h:column>
+
+		<h:column>
+			<h:outputText value="#{doc.price }" />
+		</h:column>
+	</h:dataTable>
+</h:body>
+</html>
